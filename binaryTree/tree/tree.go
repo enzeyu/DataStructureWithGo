@@ -39,6 +39,9 @@ func (n *Node) SerachValue(head *Node, val int) *Node {
 
 // 层序遍历
 func (n *Node) LevelOrder(head *Node) [][]int{
+	if head == nil{
+		return nil
+	}
 	ans := make([][]int,0)
 	queue := []*Node{ head }
 	for len(queue) > 0{
@@ -61,10 +64,40 @@ func (n *Node) LevelOrder(head *Node) [][]int{
 	return ans
 }
 
+// 先找到要删除的节点
+// 如果要删除的节点同时有左子树和右子树，则将这个值变成右子树最小值，再删去原来的右子树最小值
+// 如果要删除节点没有右子树，直接把左子树提上来即可，相反也是同理
 func (n *Node) DeleteValue(head *Node, value int) *Node{
-	// 如果删除的元素是根元素，则右子树节点变成根节点
-	
+	if head == nil{
+		return nil
+	}
+	if value > head.Value{
+		head.Right = head.Right.DeleteValue(head.Right,value)
+	}else if value < head.Value{
+		head.Left = head.Left.DeleteValue(head.Left,value)
+	}else if head.Left != nil && head.Right != nil{
+		head.Value = head.FindMinValue(head.Right)
+		head.Right = head.Right.DeleteValue(head.Right,head.Value)
+	}else if head.Left != nil{
+		head = head.Left
+	}else{
+		head = head.Right
+	}
 	return head
+}
+
+func (n *Node) FindMinValue(head *Node) int{
+	if head.Left != nil{
+		return head.Left.FindMinValue(head.Left)
+	}
+	return head.Value
+}
+
+func (n *Node) FindMaxValue(head *Node) int{
+	if head.Right != nil{
+		return head.Right.FindMaxValue(head.Right)
+	}
+	return head.Value
 }
 
 // 获得二叉树所有元素
@@ -73,6 +106,7 @@ func (n *Node) GetAll() []int{
 	return n.getElements(ans)
 }
 
+// 获得所有元素的子程序
 func (n *Node) getElements(eles []int) []int{
 	if n != nil{
 		eles = append(n.Left.getElements(eles))
