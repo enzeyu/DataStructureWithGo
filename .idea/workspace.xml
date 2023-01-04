@@ -1,16 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="84d8d5a5-5ea7-455b-befa-e0ea2f3e5230" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mergeSort/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mergeSort/merge/merge.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/heap/heapWithArray/heap.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/heap/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quickSort/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/quickSort/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
   </component>
   <component name="GOROOT" path="/usr/local/go" />
   <component name="Git.Settings">
@@ -20,11 +44,15 @@
     <option name="indexEntireGoPath" value="false" />
   </component>
   <component name="ProjectId" id="29gtBSZb3lSETXkrYxG6ZFFco6L" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
@@ -51,61 +79,61 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="518" y="547" key="#GOROOT" timestamp="1672756777203">
       <screen x="57" y="25" width="1287" height="815" />
     </state>
     <state x="518" y="547" key="#GOROOT/57.25.1287.815@57.25.1287.815" timestamp="1672756777203" />
-    <state width="1244" height="258" key="GridCell.Tab.0.bottom" timestamp="1672758616010">
+    <state width="1244" height="258" key="GridCell.Tab.0.bottom" timestamp="1672758967325">
       <screen x="59" y="25" width="1285" height="815" />
     </state>
     <state width="1244" height="258" key="GridCell.Tab.0.bottom/57.25.1287.815@57.25.1287.815" timestamp="1672757868582" />
-    <state width="1244" height="258" key="GridCell.Tab.0.bottom/59.25.1285.815@59.25.1285.815" timestamp="1672758616010" />
-    <state width="1244" height="258" key="GridCell.Tab.0.center" timestamp="1672758616010">
+    <state width="1244" height="258" key="GridCell.Tab.0.bottom/59.25.1285.815@59.25.1285.815" timestamp="1672758967325" />
+    <state width="1244" height="258" key="GridCell.Tab.0.center" timestamp="1672758967324">
       <screen x="59" y="25" width="1285" height="815" />
     </state>
     <state width="1244" height="258" key="GridCell.Tab.0.center/57.25.1287.815@57.25.1287.815" timestamp="1672757868581" />
-    <state width="1244" height="258" key="GridCell.Tab.0.center/59.25.1285.815@59.25.1285.815" timestamp="1672758616010" />
-    <state width="1244" height="258" key="GridCell.Tab.0.left" timestamp="1672758616009">
+    <state width="1244" height="258" key="GridCell.Tab.0.center/59.25.1285.815@59.25.1285.815" timestamp="1672758967324" />
+    <state width="1244" height="258" key="GridCell.Tab.0.left" timestamp="1672758967324">
       <screen x="59" y="25" width="1285" height="815" />
     </state>
     <state width="1244" height="258" key="GridCell.Tab.0.left/57.25.1287.815@57.25.1287.815" timestamp="1672757868580" />
-    <state width="1244" height="258" key="GridCell.Tab.0.left/59.25.1285.815@59.25.1285.815" timestamp="1672758616009" />
-    <state width="1244" height="258" key="GridCell.Tab.0.right" timestamp="1672758616010">
+    <state width="1244" height="258" key="GridCell.Tab.0.left/59.25.1285.815@59.25.1285.815" timestamp="1672758967324" />
+    <state width="1244" height="258" key="GridCell.Tab.0.right" timestamp="1672758967324">
       <screen x="59" y="25" width="1285" height="815" />
     </state>
     <state width="1244" height="258" key="GridCell.Tab.0.right/57.25.1287.815@57.25.1287.815" timestamp="1672757868581" />
-    <state width="1244" height="258" key="GridCell.Tab.0.right/59.25.1285.815@59.25.1285.815" timestamp="1672758616010" />
-    <state width="1244" height="258" key="GridCell.Tab.1.bottom" timestamp="1672758616054">
+    <state width="1244" height="258" key="GridCell.Tab.0.right/59.25.1285.815@59.25.1285.815" timestamp="1672758967324" />
+    <state width="1244" height="258" key="GridCell.Tab.1.bottom" timestamp="1672758967325">
       <screen x="59" y="25" width="1285" height="815" />
     </state>
     <state width="1244" height="258" key="GridCell.Tab.1.bottom/57.25.1287.815@57.25.1287.815" timestamp="1672757868583" />
-    <state width="1244" height="258" key="GridCell.Tab.1.bottom/59.25.1285.815@59.25.1285.815" timestamp="1672758616054" />
-    <state width="1244" height="258" key="GridCell.Tab.1.center" timestamp="1672758616053">
+    <state width="1244" height="258" key="GridCell.Tab.1.bottom/59.25.1285.815@59.25.1285.815" timestamp="1672758967325" />
+    <state width="1244" height="258" key="GridCell.Tab.1.center" timestamp="1672758967325">
       <screen x="59" y="25" width="1285" height="815" />
     </state>
     <state width="1244" height="258" key="GridCell.Tab.1.center/57.25.1287.815@57.25.1287.815" timestamp="1672757868583" />
-    <state width="1244" height="258" key="GridCell.Tab.1.center/59.25.1285.815@59.25.1285.815" timestamp="1672758616053" />
-    <state width="1244" height="258" key="GridCell.Tab.1.left" timestamp="1672758616053">
+    <state width="1244" height="258" key="GridCell.Tab.1.center/59.25.1285.815@59.25.1285.815" timestamp="1672758967325" />
+    <state width="1244" height="258" key="GridCell.Tab.1.left" timestamp="1672758967325">
       <screen x="59" y="25" width="1285" height="815" />
     </state>
     <state width="1244" height="258" key="GridCell.Tab.1.left/57.25.1287.815@57.25.1287.815" timestamp="1672757868583" />
-    <state width="1244" height="258" key="GridCell.Tab.1.left/59.25.1285.815@59.25.1285.815" timestamp="1672758616053" />
-    <state width="1244" height="258" key="GridCell.Tab.1.right" timestamp="1672758616053">
+    <state width="1244" height="258" key="GridCell.Tab.1.left/59.25.1285.815@59.25.1285.815" timestamp="1672758967325" />
+    <state width="1244" height="258" key="GridCell.Tab.1.right" timestamp="1672758967325">
       <screen x="59" y="25" width="1285" height="815" />
     </state>
     <state width="1244" height="258" key="GridCell.Tab.1.right/57.25.1287.815@57.25.1287.815" timestamp="1672757868583" />
-    <state width="1244" height="258" key="GridCell.Tab.1.right/59.25.1285.815@59.25.1285.815" timestamp="1672758616053" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/mergeSort/merge/merge.go</url>
-          <line>17</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state width="1244" height="258" key="GridCell.Tab.1.right/59.25.1285.815@59.25.1285.815" timestamp="1672758967325" />
   </component>
 </project>
