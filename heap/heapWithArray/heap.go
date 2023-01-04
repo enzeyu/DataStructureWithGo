@@ -1,10 +1,12 @@
 package heapWithArray
 
+// 输入一个普通数组，在数组基础上构建堆
 func ConstructHeap(data []int){
 	heapSize := len(data)-1
 	build(data,1,heapSize) // 为首元素建立堆
 }
 
+// 获得左右节点，为左右节点构建堆，然后进行修复，满足偏序关系
 func build(data []int,i,heapSize int){
 	left := getLeft(i)
 	right := getRight(i)
@@ -17,6 +19,7 @@ func build(data []int,i,heapSize int){
 	heapFix(data,i,heapSize)
 }
 
+// 修复，以根，左右找到最大的，交换到根上，再对破坏的偏序关系进行递归修复
 func heapFix(data []int,i,heapSize int){
 	left,right := getLeft(i),getRight(i)
 	temp := i
