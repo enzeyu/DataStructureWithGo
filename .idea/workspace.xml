@@ -20,6 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84d8d5a5-5ea7-455b-befa-e0ea2f3e5230" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/priorityQueue/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/priorityQueue/pQueue/queue.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/heap/heapWithArray/heap.go" beforeDir="false" afterPath="$PROJECT_DIR$/heap/heapWithArray/heap.go" afterDir="false" />
     </list>
@@ -59,7 +61,15 @@
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Build.go build main.go (1)">
+    <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="dataStructureWithGo" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/priorityQueue/main.go" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="dataStructureWithGo" />
       <working_directory value="$PROJECT_DIR$" />
@@ -70,6 +80,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build main.go (1)" />
         <item itemvalue="Go Build.go build main.go" />
       </list>
     </recent_temporary>
@@ -88,50 +99,59 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="518" y="547" key="#GOROOT" timestamp="1672756777203">
       <screen x="57" y="25" width="1287" height="815" />
     </state>
     <state x="518" y="547" key="#GOROOT/57.25.1287.815@57.25.1287.815" timestamp="1672756777203" />
-    <state width="1244" height="258" key="GridCell.Tab.0.bottom" timestamp="1672758967325">
-      <screen x="59" y="25" width="1285" height="815" />
+    <state width="1247" height="258" key="GridCell.Tab.0.bottom" timestamp="1672931263762">
+      <screen x="55" y="25" width="1289" height="815" />
     </state>
+    <state width="1247" height="258" key="GridCell.Tab.0.bottom/55.25.1289.815@55.25.1289.815" timestamp="1672931263762" />
     <state width="1244" height="258" key="GridCell.Tab.0.bottom/57.25.1287.815@57.25.1287.815" timestamp="1672757868582" />
     <state width="1244" height="258" key="GridCell.Tab.0.bottom/59.25.1285.815@59.25.1285.815" timestamp="1672758967325" />
-    <state width="1244" height="258" key="GridCell.Tab.0.center" timestamp="1672758967324">
-      <screen x="59" y="25" width="1285" height="815" />
+    <state width="1247" height="258" key="GridCell.Tab.0.center" timestamp="1672931263761">
+      <screen x="55" y="25" width="1289" height="815" />
     </state>
+    <state width="1247" height="258" key="GridCell.Tab.0.center/55.25.1289.815@55.25.1289.815" timestamp="1672931263761" />
     <state width="1244" height="258" key="GridCell.Tab.0.center/57.25.1287.815@57.25.1287.815" timestamp="1672757868581" />
     <state width="1244" height="258" key="GridCell.Tab.0.center/59.25.1285.815@59.25.1285.815" timestamp="1672758967324" />
-    <state width="1244" height="258" key="GridCell.Tab.0.left" timestamp="1672758967324">
-      <screen x="59" y="25" width="1285" height="815" />
+    <state width="1247" height="258" key="GridCell.Tab.0.left" timestamp="1672931263760">
+      <screen x="55" y="25" width="1289" height="815" />
     </state>
+    <state width="1247" height="258" key="GridCell.Tab.0.left/55.25.1289.815@55.25.1289.815" timestamp="1672931263760" />
     <state width="1244" height="258" key="GridCell.Tab.0.left/57.25.1287.815@57.25.1287.815" timestamp="1672757868580" />
     <state width="1244" height="258" key="GridCell.Tab.0.left/59.25.1285.815@59.25.1285.815" timestamp="1672758967324" />
-    <state width="1244" height="258" key="GridCell.Tab.0.right" timestamp="1672758967324">
-      <screen x="59" y="25" width="1285" height="815" />
+    <state width="1247" height="258" key="GridCell.Tab.0.right" timestamp="1672931263762">
+      <screen x="55" y="25" width="1289" height="815" />
     </state>
+    <state width="1247" height="258" key="GridCell.Tab.0.right/55.25.1289.815@55.25.1289.815" timestamp="1672931263762" />
     <state width="1244" height="258" key="GridCell.Tab.0.right/57.25.1287.815@57.25.1287.815" timestamp="1672757868581" />
     <state width="1244" height="258" key="GridCell.Tab.0.right/59.25.1285.815@59.25.1285.815" timestamp="1672758967324" />
-    <state width="1244" height="258" key="GridCell.Tab.1.bottom" timestamp="1672758967325">
-      <screen x="59" y="25" width="1285" height="815" />
+    <state width="1247" height="258" key="GridCell.Tab.1.bottom" timestamp="1672931263764">
+      <screen x="55" y="25" width="1289" height="815" />
     </state>
+    <state width="1247" height="258" key="GridCell.Tab.1.bottom/55.25.1289.815@55.25.1289.815" timestamp="1672931263764" />
     <state width="1244" height="258" key="GridCell.Tab.1.bottom/57.25.1287.815@57.25.1287.815" timestamp="1672757868583" />
     <state width="1244" height="258" key="GridCell.Tab.1.bottom/59.25.1285.815@59.25.1285.815" timestamp="1672758967325" />
-    <state width="1244" height="258" key="GridCell.Tab.1.center" timestamp="1672758967325">
-      <screen x="59" y="25" width="1285" height="815" />
+    <state width="1247" height="258" key="GridCell.Tab.1.center" timestamp="1672931263763">
+      <screen x="55" y="25" width="1289" height="815" />
     </state>
+    <state width="1247" height="258" key="GridCell.Tab.1.center/55.25.1289.815@55.25.1289.815" timestamp="1672931263763" />
     <state width="1244" height="258" key="GridCell.Tab.1.center/57.25.1287.815@57.25.1287.815" timestamp="1672757868583" />
     <state width="1244" height="258" key="GridCell.Tab.1.center/59.25.1285.815@59.25.1285.815" timestamp="1672758967325" />
-    <state width="1244" height="258" key="GridCell.Tab.1.left" timestamp="1672758967325">
-      <screen x="59" y="25" width="1285" height="815" />
+    <state width="1247" height="258" key="GridCell.Tab.1.left" timestamp="1672931263762">
+      <screen x="55" y="25" width="1289" height="815" />
     </state>
+    <state width="1247" height="258" key="GridCell.Tab.1.left/55.25.1289.815@55.25.1289.815" timestamp="1672931263762" />
     <state width="1244" height="258" key="GridCell.Tab.1.left/57.25.1287.815@57.25.1287.815" timestamp="1672757868583" />
     <state width="1244" height="258" key="GridCell.Tab.1.left/59.25.1285.815@59.25.1285.815" timestamp="1672758967325" />
-    <state width="1244" height="258" key="GridCell.Tab.1.right" timestamp="1672758967325">
-      <screen x="59" y="25" width="1285" height="815" />
+    <state width="1247" height="258" key="GridCell.Tab.1.right" timestamp="1672931263763">
+      <screen x="55" y="25" width="1289" height="815" />
     </state>
+    <state width="1247" height="258" key="GridCell.Tab.1.right/55.25.1289.815@55.25.1289.815" timestamp="1672931263763" />
     <state width="1244" height="258" key="GridCell.Tab.1.right/57.25.1287.815@57.25.1287.815" timestamp="1672757868583" />
     <state width="1244" height="258" key="GridCell.Tab.1.right/59.25.1285.815@59.25.1285.815" timestamp="1672758967325" />
   </component>

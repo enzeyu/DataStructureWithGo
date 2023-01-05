@@ -16,11 +16,11 @@ func build(data []int,i,heapSize int){
 	if right <= heapSize{
 		build(data,right,heapSize)
 	}
-	heapFix(data,i,heapSize)
+	HeapFix(data,i,heapSize)
 }
 
 // 修复，以根，左右找到最大的，交换到根上，再对破坏的偏序关系进行递归修复
-func heapFix(data []int,i,heapSize int){
+func HeapFix(data []int,i,heapSize int){
 	left,right := getLeft(i),getRight(i)
 	temp := i
 	if left <= heapSize && data[left] > data[i]{
@@ -31,7 +31,7 @@ func heapFix(data []int,i,heapSize int){
 	}
 	if temp != i{ // temp保存了根节点，左节点和右节点最大的
 		data[temp],data[i] = data[i],data[temp]
-		heapFix(data,temp,heapSize)
+		HeapFix(data,temp,heapSize)
 	}
 }
 
@@ -57,7 +57,7 @@ func GetMax(data []int) (int,[]int){
 		data[i] = data[i+1]
 	}
 	data = data[:len(data)-1]
-	heapFix(data,1,len(data)-1) // 进行修复
+	HeapFix(data,1,len(data)-1) // 进行修复
 	return max,data
 }
 
