@@ -1,2 +1,2 @@
 # DataStructureWithGo
-Some data structure implementation with go.
+Some data structure and algorithm implementation with go.
